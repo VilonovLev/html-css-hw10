@@ -10,17 +10,18 @@ body {
 .home_page {
     height: 100%;
     overflow: hidden;
+    /* padding: 2%; */
 }
 
 .baner_color_text {color: #F16D7F; font-weight: 700;}
 
 .header {
     background-color: #222222;
-    padding-right: 12%;
+    padding-right: 13%;
     padding-left: 12%;
     display: flex;
     align-items: center;
-    width: 77%;
+    width: auto;
     min-height: 75px;
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 .search {
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .baner {
@@ -80,7 +81,13 @@ body {
     justify-content: center;
 }
 
+.pic {
+    fill: rgba(33, 22, 22, 0.70);
+    filter: brightness(40%);
+}
+
 .offer {
+    margin-top: 2%;
     width: auto;
     position: relative;
     display: flex;
@@ -99,7 +106,7 @@ body {
 
 .offer_pic {
     max-width: 100%;
-    filter: brightness(30%);
+    filter: brightness(40%);
 }
 
 .baner_text {
@@ -134,7 +141,16 @@ body {
 }
 
 .product {
+    width: auto;
     background-color: #F8F8F8;
+}
+
+.product_pic {
+    width: 100%;
+}
+
+.product:hover .product_pic{
+    filter: brightness(40%);
 }
 
 .name {
@@ -179,4 +195,18 @@ body {
 @media (max-width: 1100px) {
     .catalog {grid-template-columns: repeat(2, 360px);}
     .baner {height: 270px;}
+}
+
+@media (max-width: 360px) {
+    .navigation :not(:first-child) {display: none;}
+    .offer {margin-left: 4%; margin-right: 4%;}
+    .header{padding-left: 6%;}
+    .banner_img {display: none;}
+    .main_text {width: 100%; scale: 55%; white-space: nowrap;}
+    .baner_2 {flex-direction: column;}
+    .offer_long {min-width: 100%;}
+    .pic {min-height: 111px;; max-width: 700px; }
+    .catalog {grid-template-columns: repeat(1, 360px);}
+    .product {margin-left: 2%; margin-right: 2%;}
+    .baner {height: 270px;} 
 }
