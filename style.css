@@ -192,6 +192,79 @@ body {
     font-weight: 400;
 }
 
+.footer {
+    background-color: #222224;
+    color: white;
+}
+.features {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    width: auto; 
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sibscribe_block {
+    color: black;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 440px;
+    background-image: url(./res/background.png)
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment {
+    font-style: italic;
+}
+
+.entry_email {
+    display: flex;
+    width: auto;
+    display: block;
+}
+
+.email {
+    height: 130%;
+    border: 2px solid #000;
+    border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px;
+}
+
+.email_enter {
+    margin-left: -5%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 0 15px 15px 0;
+    -moz-border-radius: 15px;
+}
+
+.copyrite {
+    padding: 0 10%;
+    display:flex;
+    justify-content: space-between;
+}
+
+/* .links {
+    display: inline;
+} */
+
+.link {
+    display: inline;
+}
+
 @media (max-width: 1100px) {
     .catalog {grid-template-columns: repeat(2, 360px);}
     .baner {height: 270px;}
