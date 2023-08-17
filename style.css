@@ -10,7 +10,6 @@ body {
 .home_page {
     height: 100%;
     overflow: hidden;
-    /* padding: 2%; */
 }
 
 .baner_color_text {color: #F16D7F; font-weight: 700;}
@@ -192,87 +191,135 @@ body {
     font-weight: 400;
 }
 
+.button_but:hover{
+    color: white;
+    background-color: #F16D7F;
+}
+
 .footer {
     background-color: #222224;
     color: white;
 }
 .features {
-    padding: 5% 10%;
+    padding: 5% 14%;
     display: flex;
     justify-content: space-between;
     width: auto; 
 }
 
 .feature {
+    width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.name {
+    font-size: 20px;
 }
 
 .sibscribe_block {
+    text-align: center;
     color: black;
-    padding: 5% 10%;
+    padding: 5% 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 440px;
-    background-image: url(./res/background.png)
+    height: auto;
+    height: 448px;
+    background-image:radial-gradient(
+        rgba(244, 244, 244, 0.70),
+        rgba(244, 244, 244, 0.70)
+      ),  url(./res/background.png);
+    background-size: cover;
+    
 }
 
 .user {
+    margin-top: -5%;
     display: flex;
+    width: 360px;
+    gap: 30px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
+    font-size: 20px;
 }
 
 .comment {
     font-style: italic;
 }
 
+.subscribe{
+    line-height: 167.2%;
+}
+
 .entry_email {
+    margin-top: 32px;
     display: flex;
     width: auto;
     display: block;
 }
 
 .email {
-    height: 130%;
-    border: 2px solid #000;
-    border-radius: 15px 0 0 15px;
-    -moz-border-radius: 15px;
+    height: 50px;
+    width: 256;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    text-indent: 15px;
+    background-color: #E1E1E1;
 }
 
 .email_enter {
-    margin-left: -5%;
-    height: auto;
-    border: 2px solid #000;
-    border-radius: 0 15px 15px 0;
-    -moz-border-radius: 15px;
+    margin-left: -6px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #F16D7F;
+    color: white;
 }
 
 .copyrite {
+    height: 79px;
     padding: 0 10%;
     display:flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-/* .links {
-    display: inline;
-} */
+.links{
+    display: flex;
+    
+}
 
 .link {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    min-height: 32px;
+    background-color: #FFF;
+    margin-left: 5px;
+}
+
+.link:hover {
+    background-color: #F16D7F;
 }
 
 @media (max-width: 1100px) {
     .catalog {grid-template-columns: repeat(2, 360px);}
     .baner {height: 270px;}
+    .features {flex-direction: column; align-items: center;}
+    .user {margin-top: 10%;}
+    .sibscribe_block {flex-direction: column; background-position: 30% 10%;}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 426px) {
     .navigation :not(:first-child) {display: none;}
     .offer {margin-left: 4%; margin-right: 4%;}
+    .feature {width: 350px;}
+    .entry_email {width: 350px;}
     .header{padding-left: 6%;}
     .banner_img {display: none;}
     .main_text {width: 100%; scale: 55%; white-space: nowrap;}
@@ -282,4 +329,5 @@ body {
     .catalog {grid-template-columns: repeat(1, 360px);}
     .product {margin-left: 2%; margin-right: 2%;}
     .baner {height: 270px;} 
+    .copyrite {height: 143px; flex-direction: column-reverse; justify-content: space-around;}
 }
